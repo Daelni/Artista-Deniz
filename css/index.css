@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.fas {
+    font-size: 1.2em;
+  }
+
+.navbar{
+    background-color: #967dfb;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+.navbar .logo{
+    width: 70px;
+    grid-column: 2 / 3;
+}
+
+.navbar .menu{
+    grid-column: 4 /7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu li{
+    list-style: none;
+}
+
+.navbar .menu a{
+    text-decoration: none;
+    color: #181818;
+    cursor: pointer;
+}
+
+.navbar .menu a:hover{
+    color: #fff;
+}
+
+.navbar .menu-bar{
+    display: none;
+}
+
+.navbar .shoping{
+    grid-column: 8/9;
+}
+
+/* SECTION MAIN */
+
+.hero{
+    background-image: linear-gradient(rgba(16, 16, 16, .4), rgba(16, 16, 16, .9)) , url(../img/fondo.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    position: relative;
+}
+
+.hero .info-content{
+    grid-column: 2/5;
+    grid-row: 2/7;
+    color: #fff;
+}
+
+.hero h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.hero h1{
+    font-size: 5em;
+    color: #967dfb;
+}
+
+.hero p {
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero .btn{
+    font-size: 1em;
+    background: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #967dfb;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.hero .btn:hover {
+    background: #967dfb;
+    color: #181818;
+}
