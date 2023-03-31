@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body{
@@ -26,14 +26,27 @@ body{
     grid-column: 2 / 3;
 }
 
-.navbar .menu{
+/* .navbar .menu{
     grid-column: 4 /7;
     display: flex;
+    justify-content: space-around!important;
+} */
+.navbar {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    
+    padding: 0px 14px 0px 12px;
+}
+.navbar .menu ul {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
 }
 
 .navbar .menu li{
     list-style: none;
+    margin-left: 75px;
 }
 
 .navbar .menu a{
@@ -47,11 +60,14 @@ body{
 }
 
 .navbar .menu-bar{
+    display: flex;
     display: none;
+    justify-content: flex-end;
+    margin-top: 25px;
 }
-
 .navbar .shoping{
     grid-column: 8/9;
+    cursor: pointer;
 }
 
 /* SECTION MAIN */
